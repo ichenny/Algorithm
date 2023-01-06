@@ -4,7 +4,6 @@ let n = Number(input.shift())
 
 const replace = (str) => {
     let res = '';
-    let count = 1;
     for(let i = 0; i < str.length; i++){
       let cur = str[i];
       let next = str[i + 1];
