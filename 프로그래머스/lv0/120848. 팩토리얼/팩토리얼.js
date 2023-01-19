@@ -9,10 +9,5 @@ function solution(n) {
     arr.push(n)
     arr.sort((a,b) => a-b)
     
-    let index
-    
-    if(factoArr.indexOf(n) === -1) index = arr.indexOf(n)
-    else index = arr.indexOf(n) + 1
-    
-    return index
+    return factoArr.indexOf(n) === -1 ? arr.indexOf(n) : arr.indexOf(n) + 1 
 }
